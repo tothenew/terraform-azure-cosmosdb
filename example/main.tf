@@ -1,4 +1,4 @@
-module "create_cosmosdb" {
+module "cosmosdb" {
   source                          = "git::https://github.com/gauravnegi100/cosmosdb_modules.git"
 
   create_mongodb                  = false

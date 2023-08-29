@@ -6,13 +6,10 @@ resource "azurerm_cosmosdb_account" "cosmosdb_acc" {
   offer_type                    = "Standard"
   kind                          = var.create_mongodb ? "MongoDB" : "GlobalDocumentDB"
   public_network_access_enabled = var.public_network_access_enabled
-  # ip_range_filter               = var.ip_firewall_enabled == true ? local.firewall_ips : null
 
   enable_automatic_failover       = var.enable_automatic_failover
   enable_free_tier                = var.free_tier
   enable_multiple_write_locations = var.multi_region_write
-
-  # tags = local.tags
 
   consistency_policy {
        consistency_level       = var.consistency_policy.consistency_level

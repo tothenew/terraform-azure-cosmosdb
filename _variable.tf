@@ -82,8 +82,9 @@ variable "vnet_name" {
 
 
 
-################################################################################################
-################################################################################################
+###################################################################
+###                  Cosmosdb account                           ###
+###################################################################
 
 variable "account_name" {
   description = "name of your cosmos account"
@@ -133,8 +134,6 @@ variable "max_staleness_prefix" {
   type        = number
   default     = 100000
 }
-
-
 
 variable "consistency_policy" {
   type = object({
@@ -619,8 +618,9 @@ variable "max_throughput" {
   default = 1000
 }
 
-###########################################################
-
+###################################################################
+###                private endpoint                             ###
+###################################################################
 variable "private_dns_zone_name" {
     description = "The name of the private DNS zone for the MariaDB server."
     type        = string
@@ -656,5 +656,4 @@ variable "subresource_name" {
 }
 
 
-###################################################################
 
