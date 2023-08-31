@@ -621,6 +621,12 @@ variable "max_throughput" {
 ###################################################################
 ###                private endpoint                             ###
 ###################################################################
+
+variable "private_endpoint" {
+  type = bool
+  default = true
+} 
+
 variable "private_dns_zone_name" {
     description = "The name of the private DNS zone for the MariaDB server."
     type        = string
@@ -645,11 +651,6 @@ variable "dns_zone_virtual_network_link_name" {
     default     = "vnet-private-zone-link"
 }
  
- variable "private_endpoint" {
-  type = bool
-  default = true
-   
- }
 variable "subresource_name" {
   type = list(string)
   default = ["MongoDB","coordinator","Cassandra","SQL","Table","Gremlin"]
