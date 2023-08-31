@@ -74,5 +74,4 @@ dynamic "analytical_storage" {
     }
   
   tags = merge(local.common_tags, tomap({ "Name" : local.project_name_prefix }))
-
 }

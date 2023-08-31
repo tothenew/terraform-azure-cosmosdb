@@ -137,6 +137,10 @@ resource "azurerm_cosmosdb_postgresql_cluster" "example" {
   identity                        = "SystemAssigned"
 }
 ```
+This is an overview of the input variables and default values for the Terraform resources thatthat deploy Azure CosmosDB MongoDB database and collection. for more customization please refer to terraform documentation.
+
+https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/cosmosdb_account
+
 # Azure CosmosDB MongoDB Database and Collection Resources
 
 These Terraform resources deploy an Azure CosmosDB MongoDB database and collection with the specified configuration.
@@ -207,7 +211,7 @@ resource "azurerm_cosmosdb_mongo_collection" "collection" {
 
 Replace the values in the `Example Usage` section with your specific configuration.
 
-This is an overview of the input variables and default values for the Terraform resources thatthat deploy Azure CosmosDB MongoDB database and collection. Customize the configuration as needed for your Terraform project.
+This is an overview of the input variables and default values for the Terraform resources thatthat deploy Azure CosmosDB MongoDB database and collection.for more customization please refer to terraform documentation.
 
 https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/cosmosdb_mongo_collection
 
@@ -364,6 +368,8 @@ Replace the values in the `Example Usage` section with your specific configurati
 
 This is an overview of the input variables and default values for the Terraform resources that deploy Azure CosmosDB Cassandra Keyspace and Cassandra Table. for more customization please refer to terraform documentation
 
+https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/cosmosdb_cassandra_table
+
 
 ## Azure CosmosDB Gremlin Database and Gremlin Graph Resources
 
@@ -427,6 +433,7 @@ resource "azurerm_cosmosdb_gremlin_graph" "example" {
 ```
 
 This is an overview of the input variables and default values for the Terraform resources that deploy Azure CosmosDB Gremlin Database and Gremlin Graph. for more customization please refer to terraform documentation
+
 https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/cosmosdb_gremlin_graph
 
 ## Azure CosmosDB SQL Database and SQL Container Resources
@@ -498,6 +505,7 @@ resource "azurerm_cosmosdb_sql_container" "example" {
 ```
 
 This is an overview of the input variables and default values for the Terraform resources that deploy Azure CosmosDB SQL Database and SQL Container.  for more customization please refer to terraform documentation.
+
 https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/cosmosdb_sql_container
 
 ## Azure CosmosDB Table Resource
@@ -526,6 +534,7 @@ resource "azurerm_cosmosdb_table" "table" {
 ```
 
 This is an overview of the input variables and default values for the Terraform resources that deploys an Azure CosmosDB Table.for more customization please refer to terraform documentation.
+
 https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/cosmosdb_table
 
 
